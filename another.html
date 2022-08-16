@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BANK</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Inter', 'sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center">Welcome to Bank</h1>
+    </header>
+  <main>
+    <section class="mt-8">
+        <div class="flex gap-4 justify-center">
+            <div class="block rounded-lg shadow-lg bg-yellow-200 max-w-sm ">
+              <div class="px-8">
+                <h5 class="text-gray-900 text-xl font-medium mb-2">Deposit</h5>
+                <p class="text-gray-700 text-base mb-4">
+                 $<span  id="deposite-amount">0</span>
+                </p>
+              </div>
+            </div>
+            <div class="block rounded-lg shadow-lg bg-blue-500 max-w-sm ">
+                <div class="px-8">
+                  <h5 class="text-gray-900 text-xl font-medium mb-2">Witdraw</h5>
+                  <p class="text-gray-700 text-base mb-4">
+                   $<span  id="withdraw-amount">0</span>
+                  </p>
+                </div>
+              </div>
+              <div class="block rounded-lg shadow-lg bg-green-500 max-w-sm ">
+                <div class="px-8">
+                  <h5 class="text-gray-900 text-xl font-medium mb-2">Total</h5>
+                  <p class="text-gray-700 text-base mb-4">
+                   $<span id="total-amount">1250</span>
+                  </p>
+                </div>
+              </div>
+          </div>
+    </section>
+    <section class="mt-8">
+        <div class="flex justify-center gap-4">
+            <div class="block rounded-lg shadow-lg bg-purple-300 max-w-sm">
+              <div class="p-6">
+                <h5 class="text-gray-900 text-xl font-medium mb-2">Please Deposit</h5>
+                <p class="text-sm mb-4">
+                  <input id="diposite-input" type="text"  placeholder="Enter Amount">
+                </p>
+                <button type="button" id="btn-deposite" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Deposite</button>
+              </div>
+            </div>
+            <div class="block rounded-lg shadow-lg bg-indigo-400 max-w-sm">
+              <div class="p-6">
+                <h5 class="text-gray-900 text-xl font-medium mb-2"> Please  Withdraw</h5>
+                <p class="text-gray-700 text-base mb-4">
+                  <input id="withdraw-input" type="text" placeholder="Enter Amount">
+                </p>
+                <button type="button" id="btn-withdraw" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Withdraw</button>
+              </div>
+            </div>
+          </div>
+    </section>
+    <div class="flex justify-center mt-10 mb-10">
+      <button type="button" id="btn-logout" class=" px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Logout</button>
+    </div>
+  </main>
+
+
+ 
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+<script src="login.js"></script>
+<script src="deposite.js"></script>
+<script src="withdraw.js"></script>
+</body>
+</html>

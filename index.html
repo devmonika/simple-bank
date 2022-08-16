@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BANK</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Inter', 'sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center">Welcome to Bank</h1>
+    </header>
+  <section class="bg-blue-200 w-9/12 mx-auto mt-12 p-8">
+    <h3 class="text-center">Please Login</h3>
+    <div class="">
+        <input class="px-16 mb-2 py-2 rounded" type="email" name="" id="user-email" placeholder="your email address">
+        <input class="px-16 block py-2 mb-2 rounded" type="password" name="" id="user-pass" placeholder="your password">
+        <button id="btn-submit" class="bg-amber-400 px-5 py-1 text-white rounded">Login</button>
+    </div>
+  </section>
+
+
+
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+<script src="login.js"></script>
+</body>
+</html>
